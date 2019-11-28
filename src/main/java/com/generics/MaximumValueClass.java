@@ -1,29 +1,20 @@
 package com.generics;
 
+public class MaximumValueClass<E extends Comparable<E>> {
+    E firstParameter;
+    E secondParameter;
+    E thirdParameter;
 
-public class MaximumValueClass {
-    public Integer findMaximum(Integer a, Integer b, Integer c) {
-        Integer max=a;
-        if(b.compareTo(max)>0)
-            max=b;
-        if(c.compareTo(max)>0)
-            max=c;
-
-        return max;
+    public MaximumValueClass(E firstParameter, E secondParameter, E thirdParameter) {
+        this.firstParameter = firstParameter;
+        this.secondParameter = secondParameter;
+        this.thirdParameter = thirdParameter;
     }
-
-    public Float findMaximum(Float a, Float b, Float c) {
-        Float max=a;
-        if(b.compareTo(max)>0)
-            max=b;
-        if(c.compareTo(max)>0)
-            max=c;
-
-        return max;
+    public E testMaximum(){
+        return findMaximum(firstParameter,secondParameter,thirdParameter);
     }
-
-    public String findMaximum(String a, String b, String c) {
-        String max=a;
+    public E findMaximum(E a, E b, E c) {
+        E max=a;
         if(b.compareTo(max)>0)
             max=b;
         if(c.compareTo(max)>0)
