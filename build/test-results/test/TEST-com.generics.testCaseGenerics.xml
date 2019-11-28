@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.testCaseGenerics" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:31:51" hostname="admin1-Lenovo-Product" time="0.002">
+<testsuite name="com.generics.testCaseGenerics" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:43:18" hostname="admin1-Lenovo-Product" time="0.003">
   <properties/>
-  <testcase name="givenThreeFloat_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.001"/>
+  <testcase name="givenThreeFloat_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.002"/>
   <testcase name="givenThreeStrings_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.0"/>
   <testcase name="givenThreeInteger_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

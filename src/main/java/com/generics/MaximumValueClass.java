@@ -10,10 +10,7 @@ public class MaximumValueClass<E extends Comparable<E>> {
         this.secondParameter = secondParameter;
         this.thirdParameter = thirdParameter;
     }
-    public E testMaximum(){
-        return findMaximum(firstParameter,secondParameter,thirdParameter);
-    }
-    public E findMaximum(E a, E b, E c) {
+       public E testMaximum(E a, E b, E c) {
         E max=a;
         if(b.compareTo(max)>0)
             max=b;

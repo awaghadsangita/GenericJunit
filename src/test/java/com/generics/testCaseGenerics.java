@@ -10,7 +10,7 @@ public class testCaseGenerics {
         Integer b=500;
         Integer c=700;
         MaximumValueClass<Integer> obj = new <Integer>MaximumValueClass(a,b,c);
-        Integer result = obj.testMaximum();
+        Integer result = obj.testMaximum(a,b,c);
         Assert.assertEquals(c,result);
     }
     @Test
@@ -19,7 +19,7 @@ public class testCaseGenerics {
         Float b=500.75f;
         Float c=700.57f;
         MaximumValueClass<Float> obj = new<Float> MaximumValueClass(a,b,c);
-        Float result =obj.testMaximum();
+        Float result =obj.testMaximum(a,b,c);
         Assert.assertEquals(c,result);
     }
     @Test
@@ -28,7 +28,7 @@ public class testCaseGenerics {
         String b="Sneha";
         String c="Sangita";
         MaximumValueClass<String> obj = new<String> MaximumValueClass(a,b,c);
-        String result = obj.testMaximum();
+        String result = obj.testMaximum(a,b,c);
         Assert.assertEquals(b,result);
     }
 }
