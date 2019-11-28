@@ -28,7 +28,7 @@ public class testCaseGenerics {
         String b="Sneha";
         String c="Sangita";
         MaximumValueClass obj = new MaximumValueClass();
-        String result = obj.findMaximum(a, b, c);
+        String result = (String)obj.findMaximum(a, b, c);
         Assert.assertEquals(b,result);
     }
 }
