@@ -22,4 +22,13 @@ public class testCaseGenerics {
         Double result = obj.findMaximum(a, b, c);
         Assert.assertEquals(c,result);
     }
+    @Test
+    public void givenThreeStrings_ShouldReturnMaximum() {
+        String a="Kavita";
+        String b="Sneha";
+        String c="Sangita";
+        MaximumValueClass obj = new MaximumValueClass();
+        String result = obj.findMaximum(a, b, c);
+        Assert.assertEquals(b,result);
+    }
 }
