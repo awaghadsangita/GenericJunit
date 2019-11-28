@@ -1,21 +1,22 @@
 package com.generics;
 
 public class MaximumValueClass<E extends Comparable<E>> {
-    E firstParameter;
-    E secondParameter;
-    E thirdParameter;
+    E a;
+    E b;
+    E c;
 
-    public MaximumValueClass(E firstParameter, E secondParameter, E thirdParameter) {
-        this.firstParameter = firstParameter;
-        this.secondParameter = secondParameter;
-        this.thirdParameter = thirdParameter;
+    public MaximumValueClass(E a, E b, E c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
-       public E testMaximum(E a, E b, E c) {
-        E max=a;
-        if(b.compareTo(max)>0)
-            max=b;
-        if(c.compareTo(max)>0)
-            max=c;
+
+    public E testMaximum() {
+        E max=this.a;
+        if(this.b.compareTo(max)>0)
+            max=this.b;
+        if(this.c.compareTo(max)>0)
+            max=this.c;
 
         return max;
     }
