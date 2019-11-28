@@ -10,11 +10,9 @@ public class MaximumValueClass<E extends Comparable<E>> {
         this.b = b;
         this.c = c;
     }
-    public E printMax()
+    public void printMax(E max)
     {
-        E result=this.testMaximum();
-        System.out.println("Maximum Number :"+result);
-        return result;
+        System.out.println("Maximum Number :"+max);
     }
 
     public E testMaximum() {
@@ -23,7 +21,7 @@ public class MaximumValueClass<E extends Comparable<E>> {
             max=this.b;
         if(this.c.compareTo(max)>0)
             max=this.c;
-
+        this.printMax(max);
         return max;
     }
 }
