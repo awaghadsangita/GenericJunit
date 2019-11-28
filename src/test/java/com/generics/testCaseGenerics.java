@@ -9,17 +9,17 @@ public class testCaseGenerics {
         Integer a=100;
         Integer b=500;
         Integer c=700;
-        MaximumValueClass obj = new MaximumValueClass();
-        Integer result = (Integer) obj.findMaximum(a, b, c);
+        MaximumValueClass<Integer> obj = new <Integer>MaximumValueClass(a,b,c);
+        Integer result = obj.testMaximum();
         Assert.assertEquals(c,result);
     }
     @Test
-    public void givenThreeFDouble_ShouldReturnMaximum() {
-        Double a=100.75;
-        Double b=500.75;
-        Double c=700.57;
-        MaximumValueClass obj = new MaximumValueClass();
-        Double result =(Double) obj.findMaximum(a, b, c);
+    public void givenThreeFloat_ShouldReturnMaximum() {
+        Float a=100.75f;
+        Float b=500.75f;
+        Float c=700.57f;
+        MaximumValueClass<Float> obj = new<Float> MaximumValueClass(a,b,c);
+        Float result =obj.testMaximum();
         Assert.assertEquals(c,result);
     }
     @Test
@@ -27,8 +27,8 @@ public class testCaseGenerics {
         String a="Kavita";
         String b="Sneha";
         String c="Sangita";
-        MaximumValueClass obj = new MaximumValueClass();
-        String result = (String)obj.findMaximum(a, b, c);
+        MaximumValueClass<String> obj = new<String> MaximumValueClass(a,b,c);
+        String result = obj.testMaximum();
         Assert.assertEquals(b,result);
     }
 }
