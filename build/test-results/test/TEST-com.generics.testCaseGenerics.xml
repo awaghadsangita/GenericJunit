@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.testCaseGenerics" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T10:55:50" hostname="admin1-Lenovo-Product" time="0.002">
+<testsuite name="com.generics.testCaseGenerics" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:08:43" hostname="admin1-Lenovo-Product" time="0.002">
   <properties/>
   <testcase name="givenThreeStrings_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.001"/>
   <testcase name="givenThreeFDouble_ShouldReturnMaximum" classname="com.generics.testCaseGenerics" time="0.0"/>

@@ -19,7 +19,7 @@ public class testCaseGenerics {
         Double b=500.75;
         Double c=700.57;
         MaximumValueClass obj = new MaximumValueClass();
-        Double result = obj.findMaximum(a, b, c);
+        Double result =(Double) obj.findMaximum(a, b, c);
         Assert.assertEquals(c,result);
     }
     @Test
@@ -28,7 +28,7 @@ public class testCaseGenerics {
         String b="Sneha";
         String c="Sangita";
         MaximumValueClass obj = new MaximumValueClass();
-        String result = obj.findMaximum(a, b, c);
+        String result = (String)obj.findMaximum(a, b, c);
         Assert.assertEquals(b,result);
     }
 }
