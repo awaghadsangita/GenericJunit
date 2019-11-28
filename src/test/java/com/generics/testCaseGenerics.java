@@ -15,11 +15,11 @@ public class testCaseGenerics {
     }
     @Test
     public void givenThreeFDouble_ShouldReturnMaximum() {
-        Double a=100.75;
-        Double b=500.75;
-        Double c=700.57;
+        Float a=100.75f;
+        Float b=500.75f;
+        Float c=700.57f;
         MaximumValueClass obj = new MaximumValueClass();
-        Double result = obj.findMaximum(a, b, c);
+        Float result = obj.findMaximum(a, b, c);
         Assert.assertEquals(c,result);
     }
 }
